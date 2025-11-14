@@ -1,8 +1,8 @@
-# 3D Sci-Fi Portfolio
+# 🚀 ONYANGO_JP Stellar Compass Portfolio
 
-An immersive, cinematic portfolio experience where users navigate through floating planets in deep space. Each planet represents a different section of your portfolio, creating a unique and memorable way to showcase your work.
+An immersive, cinematic 3D portfolio experience where users navigate through floating planets in deep space. Each planet represents a different section of the portfolio, creating a unique and memorable way to showcase professional work.
 
-![Portfolio Preview](https://via.placeholder.com/800x400/00010F/6C1BDB?text=3D+Sci-Fi+Portfolio)
+![ONYANGO_JP Portfolio](https://via.placeholder.com/800x400/00010F/00E5FF?text=ONYANGO_JP+Stellar+Compass)
 
 ## Features
 
@@ -43,16 +43,23 @@ An immersive, cinematic portfolio experience where users navigate through floati
 - **TypeScript** - Type-safe development
 - **Vite** - Fast build tool and dev server
 - **Three.js** - 3D graphics and WebGL rendering
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
+
+## 🚀 Deployment
+
+### **Cloudflare Pages (Recommended)**
+1. Push to GitHub repository
+2. Connect repository to Cloudflare Pages
+3. Build settings:
+   - **Build command**: `npm run build`
+   - **Build output directory**: `dist`
+   - **Node.js version**: `18.x` or higher
+
+### **Manual GitHub Setup**
+```bash
+# Create repository on GitHub, then:
+git remote add origin https://github.com/YOUR_USERNAME/onyango-jp-portfolio.git
+git branch -M main
+git push -u origin main
 ])
 ```
 
