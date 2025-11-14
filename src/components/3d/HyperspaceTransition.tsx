@@ -1,7 +1,5 @@
 import { useRef, useEffect } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
-import { EffectComposer, ChromaticAberration, Bloom } from '@react-three/postprocessing'
-import { BlendFunction } from 'postprocessing'
 import * as THREE from 'three'
 
 interface HyperspaceTransitionProps {
@@ -71,24 +69,5 @@ export function HyperspaceTransition({ isTransitioning, onTransitionComplete }: 
     }
   })
 
-  return (
-    <>
-      {isTransitioning && (
-        <EffectComposer>
-          <ChromaticAberration
-            blendFunction={BlendFunction.NORMAL}
-            offset={new THREE.Vector2(
-              0.002 * Math.sin(transitionProgress.current * 10),
-              0.002 * Math.cos(transitionProgress.current * 10)
-            )}
-          />
-          <Bloom
-            intensity={0.5}
-            luminanceThreshold={0.1}
-            luminanceSmoothing={0.9}
-          />
-        </EffectComposer>
-      )}
-    </>
-  )
+  return null // Transition effects are handled in useFrame
 }
